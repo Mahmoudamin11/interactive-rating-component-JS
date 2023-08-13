@@ -1,0 +1,161 @@
+/* Start variables */
+:root {
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+/* End variables */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+}
+
+main.pre-submit {
+    width: 360px;
+    height: 360px;
+    padding: 1.1rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 1.5rem;
+
+}
+
+.star-holder {
+    margin-top: 4px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 35%, 0.2);
+    color: var(--Light-Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+p {
+    color: var(--Light-Grey);
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.ratings {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 10px 0;
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--White);
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ratings .circle:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Medium-Grey);
+}
+
+.attribution a {
+    color: var(--Orange);
+    text-decoration: none;
+}
+
+/* =========================================== */
+
+main.after-submit {
+    width: 360px;
+    height: 360px;
+    padding: 1.1rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 1.5rem;
+    text-align: center;
+    display: none;
+}
+
+.cont {
+    display: block;
+    margin: auto;
+}
+
+.selected {
+    margin: 20px auto 20px;
+    width: 200px;
+    border-radius: 1.5rem;
+    background-color: hsla(216, 12%, 35%, 0.2);
+    color: var(--Orange);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont p {
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 100vh;
+        margin: auto 10px;
+    }
+}
